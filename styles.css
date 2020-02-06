@@ -1,0 +1,93 @@
+html {
+  background-color: #FBFBFB;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 230px;
+}
+
+.contact_container {
+  height: 70px;
+  line-height: 50px;
+  min-width: 180px;
+  width: 100%;
+}
+
+.contact_container .github_logo {
+  float: right;
+  height: 40px;
+  margin-right: 15%;
+  margin-top: 15px;
+  width: 40px;
+}
+
+.contact_container .linkedin_logo {
+  float: right;
+  height: 40px;
+  margin-right: 4%;
+  margin-top: 15px;
+  width: 40px;
+}
+
+.contact_container .email_logo {
+  float: right;
+  height: 40px;
+  margin-right: 4%;
+  margin-top: 15px;
+  width: 40px;
+}
+
+.contact_container img:hover {
+  border-right: 2px solid grey;
+  padding-right: 4px;
+  transition: 0.3s;
+}
+
+.top_heading {
+  background-color: #F6F9FF;
+  border-bottom: 1px solid #DFE0E3;
+  border-top: 1px solid #DFE0E3;
+  height: 400px;
+  text-align: center;
+  width: 100%;
+}
+
+.top_heading .top_name {
+  font-size: 50px;
+  margin-bottom: 0px;
+  padding-top: 2%;
+}
+
+.top_heading .top_text {
+  color: #828592;
+  margin-top: 5%;
+}
+
+.top_flex_container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 4%;
+  width: 80%;
+}
+
+.top_flex_container a {
+  color: #3e3c47;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  text-shadow: 1px grey;
+  transition: 0.3s;
+}
+
+.top_flex_container a:hover {
+  border-left: 2px solid #DFE0E3;
+  border-right: 2px solid #DFE0E3;
+  opacity: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
