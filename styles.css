@@ -1,6 +1,7 @@
 html {
   background-color: #FBFBFB;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'Source Serif Pro', sans-serif;
 }
 
 body {
@@ -23,15 +24,7 @@ body {
   width: 40px;
 }
 
-.contact_container .linkedin_logo {
-  float: right;
-  height: 40px;
-  margin-right: 4%;
-  margin-top: 15px;
-  width: 40px;
-}
-
-.contact_container .email_logo {
+.contact_container .linkedin_logo, .email_logo {
   float: right;
   height: 40px;
   margin-right: 4%;
@@ -90,4 +83,59 @@ body {
   opacity: 1;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.about_me_container {
+  background-image: linear-gradient(to top, #eaf8ff, #f1f9ff, #f7fbff, #fcfdff, #ffffff);
+  display: flex;
+  height: 600px;
+  width: 100%;
+}
+
+.about_me_container .about_me_left, .about_me_right {
+  flex: 1;
+  width: 50%;
+}
+
+.about_me_left img {
+  border: 3px solid #DFE0E3;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.about_me_left .about_me_title {
+  font-size: 30px;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.about_me_right .about_me_content {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  text-align: left;
+  width: 420px;
+}
+
+@media (max-width: 767px) {
+  .about_me_container {
+    flex-direction: column;
+    height: auto;
+  }
+  .about_me_left .about_me_right {
+    height: 400px;
+  }
+  .about_me_container .about_me_right,
+  .about_me_container .about_me_left {
+    width: 100%;
+  }
+  .about_me_right .about_me_content {
+    max-width: 260px;
+  }
+
 }
