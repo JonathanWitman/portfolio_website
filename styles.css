@@ -159,7 +159,7 @@ body {
 
 }
 
-/* front_end.html style */
+/* front_end.html/back_end.html style */
 .top_content_container  {
   height: auto;
   min-width: 180px;
@@ -430,4 +430,34 @@ body {
 
 .hidden {
   display: none;
+}
+
+/* experience.html style */
+.ex_main_container {
+  border-bottom: 1px solid #DFE0E3;
+  border-top: 1px solid #DFE0E3;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.ex_img_container {
+  border: 1px solid black;
+  height: 200px;
+  width: 100%;
+}
+
+.ex_desc_container {
+  border: 1px solid black;
+  height: 200px;
+  width: 100%;
+}
+
+#ex_a {
+  text-decoration: none;
+}
+
+#ex_link:hover {
+  color: black;
+  transition: color 800ms;
 }
