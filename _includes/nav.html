@@ -1,0 +1,22 @@
+{% if page.url != "/" %}
+  <section class="top_content_container">
+    <nav class="name_link_container">
+      <a href="index.html" class="name_link">Jonathan Witman</a>
+    </nav>
+    <img src="../images/hamburger.svg" alt="nav hamburger icon" class="hamburger">
+    <nav class="nav_container">
+      <a href="../index.html">Home</a>
+      {% if page.url != "/front_end.html" %}<a href="front_end.html">Front End</a>{% endif %}
+      {% if page.url != "/back_end.html" %}<a href="../back_end.html">Back End</a>{% endif %}
+      {% if page.url != "/experience.html" %}<a href="../experience.html">Experience</a>{% endif %}
+      {% if page.url != "/contact.html" %}<a href="../contact.html">Contact</a>{% endif %}
+    </nav>
+  </section>
+{% else %}
+  <nav class="top_flex_container">
+    <a href="front_end.html">Front End</a>
+    <a href="back_end.html">Back End</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+{% endif %}
