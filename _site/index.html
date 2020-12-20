@@ -1,9 +1,14 @@
----
-title: Jonathan Witman Web Developer Portfolio and Resume Website
----
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-{% include head.html %}
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <title>Jonathan Witman Web Developer Portfolio and Resume Website</title>
+</head>
+
 
   <body>
     <section class="contact_container">
@@ -15,7 +20,15 @@ title: Jonathan Witman Web Developer Portfolio and Resume Website
     <header class="top_heading">
       <h1 class="top_name">Jonathan Witman</h1>
       <h2 class="top_text">Full stack web developer.</h2>
-      {% include nav.html %}
+      
+  <nav class="top_flex_container">
+    <a href="front_end.html">Front End</a>
+    <a href="back_end.html">Back End</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+
     </header>
 
     <main class="about_me_container">
